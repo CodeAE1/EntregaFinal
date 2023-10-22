@@ -1,0 +1,68 @@
+/*****************  HEADER  *********************/
+
+
+$color_1: white;
+$color_2: #27bbaa;
+$background-color_1: #27bbaa;
+$background-color_2: white;
+$background-color_3: #242c44;
+
+.nav-wrapper {
+	width: 100%;
+	max-width: auto;
+	margin: 0 auto;
+}
+.botonIniciar {
+	font-size: 1.25rem;
+	background-color: $background-color_1;
+	color: $color_1;
+	width: 120px;
+	height: 50px;
+	transition: all 0.3s ease;
+	border: none;
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_2;
+	}
+}
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color_3;
+	padding: 1rem 1.5rem;
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		align-content: center;
+	}
+	a {
+		text-decoration: none;
+		color: $color_1;
+		font-size: 1.25rem;
+	}
+	#toggle {
+		display: none;
+	}
+	label {
+		display: none;
+	}
+	img {
+		height: 70px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

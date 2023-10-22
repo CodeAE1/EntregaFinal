@@ -1,0 +1,38 @@
+/* primero se llama a las variables, mixins y a todo lo que corresponda a utilities**/
+@import"./utilities/variables";
+@import"./utilities/mixins-icono-leido";
+@import"./utilities/mixins-grid-recuadro1";
+
+
+
+
+
+/**Aca va todo lo que esta en base**/
+@import"./base/reset";
+
+
+
+/** Aca va todo lo que es layout**/
+@import"./layout/adaptado-layout";
+@import"./layout/medias/media1100";
+@import"./layout/medias/media-nav1000";
+@import"./layout/medias/media768";
+@import"./layout/medias/media468";
+
+
+@import"./layout/header";
+@import"./layout/main-index";
+@import"./layout/main-explora-planetas";
+@import"./layout/main-explora-lunas";
+@import"./layout/main-aprede-mas";
+@import"./layout/main-contactos";
+@import"./layout/main-login";
+@import"./layout/footer";
+
+@import"./layout/medias/media768";
+
+
+
+
+
+

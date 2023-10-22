@@ -1,0 +1,16 @@
+.boton-explora {
+    font-size: 1rem;
+    font-size: $font-family;
+    background-color: #27bbaa;
+    color: white;
+    width: 120px;
+    height: 50px;
+    transition: all 0.3s ease;
+    border: none;
+
+    &:hover{
+    background-color: white;
+    color: #27bbaa;
+    }
+}
+

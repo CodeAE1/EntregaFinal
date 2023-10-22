@@ -1,0 +1,380 @@
+
+
+/**********SECCION 1************/
+
+
+.contenedor1{
+    position: relative;
+    .imagenIndex{
+        width: 100%;
+        height: 1000px;;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../assets/img/index1.jpg);
+    }
+    .texto-encima{
+        position: absolute;
+        top: 30%; 
+        left: 2%;
+        h1{
+            font-size: 4.5rem;
+            color: $font-color;
+            font-family: $font-family;
+        }
+        p{
+            font-size: 1.25rem;
+            color: $font-color;
+            font-family: $font-family;
+        }
+    }
+    .alineado-botones{
+        position: absolute;
+        top: 70%; 
+        left: 2%;
+        display: flex;
+        gap: 20px;
+
+        @import "../components/boton-aprende";
+
+        @import "../components/boton-explora";
+
+    }
+}
+
+
+
+/**********SECCION 2************/
+
+
+.contenedor2 {
+    position: relative;
+    display: flex;
+    align-items: end;
+
+    .texto2 {
+        flex: 1;
+        h3 {
+            position: absolute;
+            font-family: $font-family;
+            color: $font-color;
+            top: 20%;
+            left: 2%;
+            font-size: 1.25rem;
+        }
+        h2 {
+            @extend h3;
+            top: 30%;
+            font-size: 2.5rem;
+        }
+        p {
+            @extend h3;
+            top: 60%;
+            font-size: 1rem;
+        }
+    }
+    
+    @import "../components/boton-aprende";
+
+    .imagenSeccion2 {
+        width: 40%;
+        height: 40rem;
+        background-image: url(../assets/img/espacio1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+    }
+
+    .alineado-boton-s2 {
+        position: absolute;
+        top: 80%;
+        left: 2%; 
+    }
+
+}
+
+
+
+/**********SECCION 3************/
+
+.imagenCuadrados1{
+    width: 100px ;
+    height: 100px;
+    background-image: url(../assets/img/logo_2_CYAM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 20px;
+}
+
+.imagenCuadrados2{
+    @extend .imagenCuadrados1;
+}
+
+.imagenCuadrados3{
+    @extend .imagenCuadrados1;
+}
+
+.texto3 {
+    h3{
+        text-align: left;
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+        margin-left: 45px;
+    }
+    
+    h2{
+        color: $font-color;
+        font-family: $font-family;
+        text-align: left;
+        font-size: 2.5rem;
+        margin-left: 45px
+    }
+
+    p{
+        text-justify: inter-character;
+        font-size: 1.125rem;
+        color: $font-color;
+        font-family: $font-family;
+        margin-top: -150px;
+        margin-right: 45px;
+        display: flex;
+        justify-content: end;
+        font-weight: 300;
+    }
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 50px;
+
+    .texto3-cards {
+        h3{
+            font-size: 30px;
+            color: $font-color;
+            font-family: $font-family;
+        }   
+
+        p{
+            font-size: 1rem;
+            color: $font-color;
+            font-family: $font-family;
+            margin-top: 20px;
+        }
+    }
+}
+
+@import "../components/boton-aprende";
+
+.boton-seccion3{
+    text-align: left;
+    margin-left: 45px;
+    margin-top: 50px;
+}
+
+
+
+
+/**********SECCION 4************/
+
+
+.sectionExplora{
+    h2{
+        text-align: center ;
+        font-size: 2.5rem;
+        color: $font-color;
+        font-family: $font-family;
+        padding-bottom: 1.5rem;
+    }
+
+    p{
+        text-align: center ;
+        font-size: 1rem;
+        color: $font-color;
+        font-family: $font-family;
+    }
+}
+
+.grid-container{
+    display: grid;
+    width: calc(100% - 80px); /* Resta 80px para el espacio de separación */
+    margin: 40px; /* Agrega un margen de 20px */
+    height: auto;
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas automáticas */
+    grid-template-areas: 
+    "recuadro1 recuadro2 recuadro3"
+    "recuadro4 recuadro4 recuadro6"
+    ;
+    gap: 20px;
+
+    .recuadro1{
+        width: 100%;
+        height: 30rem;
+        background-image: url(../assets/img/01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .recuadro2{
+        @extend .recuadro1;
+        background-image: url(../assets/img/02.jpg);
+    }
+    
+    .recuadro3{
+        @extend .recuadro1;
+        background-image: url(../assets/img/03.jpg);
+    }
+    
+    .recuadro4{
+        @extend .recuadro1;
+        background-image: url(../assets/img/04.jpg);
+    }
+    
+    .recuadro5{
+        @extend .recuadro1;
+        background-image: url(../assets/img/05.jpg);
+    }
+    
+    .recuadro6{
+        @extend .recuadro1;
+        background-image: url(../assets/img/06.jpg);
+    }
+}
+
+
+
+
+/**********SECCION 5************/
+
+.contenedor5{
+    position: relative;
+    
+    .imagenLarga{
+        width: 100%;
+        height: 500px;
+        background-image: url(../assets/img/espacio4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .texto-encima5{
+        position: absolute;
+        top: 120px;
+        left: 2%;
+
+        h2{
+            color: $font-color;
+            font-family: $font-family;
+            font-size: 3.5rem;
+        }
+        p{
+            color: $font-color;
+            font-family: $font-family;
+            font-size: 1.25rem;
+            margin-top: 20px;
+        }
+    }
+
+    @import "../components/boton-aprende";
+
+    @import "../components/boton-explora";
+
+    .posicionBotones5{
+        position: absolute;
+        top: 60%; 
+        left: 2%;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
+
+
+/**********SECCION 6************/
+
+.contenedor6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .texto6 {
+        margin-right: auto;
+
+        h2 {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 2rem;
+        margin-left: 40px;
+        }
+        p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 1.25rem;
+        margin-left: 40px;
+        margin-top: 25px;
+        }
+    }
+
+    .formulario {
+        margin-left: auto;
+
+        input[type="submit"] {
+        background-color: #27bbaa;
+        color: #ffffff;
+        width: 150px;
+        height: 38px;
+        font-size: 1.25rem;
+        margin-right: 40px;
+
+        &:hover {
+            background-color: white;
+            color: #27bbaa; 
+        }
+        }
+
+        input[type="text"] {
+        background-color: transparent;
+        width: 300px;
+        height: 35px;
+        font-size: 1rem;
+        border: 3px solid white;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: white;
+            color: #27bbaa;
+        }
+        }
+
+        p {
+        color: $font-color;
+        font-family: $font-family;
+        margin-top: 20px;
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

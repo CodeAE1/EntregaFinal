@@ -1,0 +1,15 @@
+.boton-aprende {
+    font-size: 1rem;
+    font-size: $font-family;
+    background-color:transparent;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+
+&:hover{
+    background-color: white;
+    color: #27bbaa;
+    }
+}

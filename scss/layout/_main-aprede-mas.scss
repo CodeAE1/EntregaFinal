@@ -1,0 +1,446 @@
+/***************************************  APRENDE MAS  ************************************/
+
+/************ GRIDS SECCION 1**************/
+
+.blogTexto1{
+    h3{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 1rem;
+        margin-left: 40px;
+    } 
+    h2{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    p{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 1rem;
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+.blogTexto2{
+    h3{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+} 
+
+.grid-container-blog {
+    display: grid;
+    width: 100%;
+    margin: 40px;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas:
+        "blogRecuadro1 blogRecuadro1 blogRecuadro2 blogRecuadroTexto2"
+        "blogRecuadro1 blogRecuadro1 blogRecuadro3 blogRecuadroTexto3"
+        "blogRecuadroTexto1 blogRecuadroTexto1 blogRecuadro4 blogRecuadroTexto4";
+    gap: 20px;
+}
+
+/*****************************************************/
+
+.blogRecuadro1 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/04.jpg);
+    grid-row: 1 / 3 ;
+    grid-column: 1 / 3 ;
+}
+
+.blogRecuadroTexto1 {
+    grid-row: 3 ; 
+    grid-column: 1 / 3 ;
+}
+
+.iconoLeido1 {
+    @include icono-leido;
+    margin-top: 10px;
+}
+
+.subtituloRecuadro1{
+    h3{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    :nth-child(2){
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 24px;
+    }
+    :nth-child(3){
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+} 
+
+.textoLeido1{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+/*****************************************************/
+
+.blogRecuadro2 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/05.jpg);
+    grid-row: 1 ;
+    grid-column: 3 ;
+}
+
+.blogRecuadroTexto2 {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.iconoLeido2 {
+    @include icono-leido;
+    margin-top: 30px;
+}
+
+.subtituloRecuadro2{
+    @extend .subtituloRecuadro1;
+}
+
+.textoLeido2{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+/*********************************************************/
+
+.blogRecuadro3 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/06.jpg);
+    grid-row: 2 ; 
+    grid-column: 3 ; 
+}
+
+.blogRecuadroTexto3 {
+    grid-row: 2 ; 
+    grid-column: 4 ; 
+}
+
+.iconoLeido3 {
+    @include icono-leido;
+    margin-top: 30px;
+}
+
+.subtituloRecuadro3{
+    @extend .subtituloRecuadro1;
+} 
+
+.textoLeido3{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }    
+}
+
+/*********************************************************/
+
+.blogRecuadro4 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/01.jpg);
+    grid-row: 3 ; 
+    grid-column: 3 ; 
+}
+
+.blogRecuadroTexto4 {
+    grid-row: 3 ; 
+    grid-column: 4 ;
+}
+
+.iconoLeido4 {
+    @include icono-leido;
+    margin-top: 30px;
+}
+
+.subtituloRecuadro4{
+    @extend .subtituloRecuadro1;
+}
+
+.textoLeido4{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/************  GRIDS SECCION 2  **************/
+
+.noticiasTexto2{
+    h2{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 2rem;
+        margin-left: 2.5rem;
+        margin-top: 3.125rem;
+    }
+}
+
+.grid-container-blog-Noticias {
+    display: grid;
+    width: calc(100% - 40px); /* Restar 40px para el espacio de separación */
+    margin: 0 auto; /* Centrar horizontalmente */
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px ;
+    grid-template-areas:
+        "imagenNoticias1 imagenNoticias2 imagenNoticias3"
+        "blogNoticias1 blogNoticias2 blogNoticias3"
+        "imagenNoticias4 imagenNoticias5 imagenNoticias6"
+        "blogNoticias4 blogNoticias5 blogNoticias6"
+    ;
+    gap: 20px;
+    padding: 20px; /* Agregar espacio de separación */
+    margin-bottom: 3.75rem;
+}
+
+
+/*****************************************************/
+
+.imagenNoticias1 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/05.jpg);
+    grid-row: 1 ;
+    grid-column: 1 ;
+}
+
+.blogNoticias1 {
+    grid-row: 2 ;
+    grid-column: 1 ;
+}
+
+.iconoLeidoNoticias1 {
+    @include icono-leido;
+    background-image: url(../assets/img/icono_chat.png);
+    margin-top: 20px;
+}
+
+
+.subtituloNoticias1{
+    h3{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 16px;
+    }
+    p{
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+.textoLeidoNoticias1{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+.imagenNoticias2 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/espacio1.jpg);
+    grid-row: 1 ;
+    grid-column: 2 ;
+}
+
+.blogNoticias2 {
+    grid-row: 2 ;
+    grid-column: 2 ;
+}
+
+.iconoLeidoNoticias2 {
+    @include icono-leido;
+    background-image: url(../assets/img/icono_chat.png);
+    margin-top: 20px;
+}
+
+
+.subtituloNoticias2{
+    @extend .subtituloNoticias1;
+}
+
+.textoLeidoNoticias2{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+/********************************************************/
+
+.imagenNoticias3 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/06.jpg);;
+    grid-row: 1 ;
+    grid-column: 3 ;
+}
+
+.blogNoticias3 {
+    grid-row: 2 ;
+    grid-column: 3 ;
+}
+
+.iconoLeidoNoticias3 {
+    @include icono-leido;
+    margin-top: 20px;
+}
+
+.subtituloNoticias3{
+    @extend .subtituloNoticias1;
+}
+
+.textoLeidoNoticias3{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+/********************************************************/
+
+.imagenNoticias4 {
+    @include grid-recuadro1;
+    background-image: url(../assets/img/07.jpg);;
+    grid-row: 3 ;
+    grid-column: 1 ;
+}
+
+.blogNoticias4 {
+    grid-row: 4 ;
+    grid-column: 1 ;
+}
+
+.iconoLeidoNoticias4 {
+    @include icono-leido;
+    margin-top: 20px;
+}
+
+.subtituloNoticias4{
+    @extend .subtituloNoticias1;
+}
+
+.textoLeidoNoticias4{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+/********************************************************/
+
+.imagenNoticias5{
+    @include grid-recuadro1;
+    background-image: url(../assets/img/03.jpg);;
+    grid-row: 3 ;
+    grid-column: 2 ;
+}
+
+.blogNoticias5{
+    grid-row: 4 ;
+    grid-column: 2 ;
+}
+
+.iconoLeidoNoticias5{
+    @include icono-leido;
+    margin-top: 20px;
+}
+
+.subtituloNoticias5{
+    @extend .subtituloNoticias1;
+}
+
+.textoLeidoNoticias5{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+
+/********************************************************/
+
+.imagenNoticias6{
+    @include grid-recuadro1;
+    background-image: url(../assets/img/01.jpg);;
+    grid-row: 3 ;
+    grid-column: 3 ;
+}
+
+.blogNoticias6{
+    grid-row: 4 ;
+    grid-column: 3 ;
+}
+
+.iconoLeidoNoticias6{
+    @include icono-leido;
+    margin-top: 20px;
+}
+
+.subtituloNoticias6{
+    @extend .subtituloNoticias1;
+}
+
+.textoLeidoNoticias6{
+    p {
+        color: $font-color;
+        font-family: $font-family;
+        font-size: 12px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,18 @@
+.irArriba button{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: #27bbaa;
+    color: white; 
+    border: none; 
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: white;
+        color: #27bbaa;
+        transform: scale(1.2)
+    }
+}
+
+
